@@ -1,0 +1,180 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  body {
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    font-family: sans-serif;
+  }
+  .mainholder {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .loginholder {
+    width: 50%;
+    height: 100vh;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .imageholder {
+    width: 50%;
+    height: 685px;
+    background-image: url("./images/Rectangle\ 3.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+  .imagehold5 {
+    display: flex;
+    margin-top: 20px;
+    align-items: center;
+  }
+  .cards {
+    display: flex;
+    width: 100%;
+    margin-top: 410px;
+  }
+  .cardHolder {
+    width: 450px;
+    height: 270px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid lightgray;
+    background-color: white;
+    margin-left: 200px;
+  }
+  .content2 {
+    width: 90%;
+  }
+  .bioholder {
+    margin-top: 10px;
+    color: rgb(139, 132, 132);
+  }
+  .bioholder p {
+    font-size: 16px;
+  }
+  
+  .welcomeholder {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .input {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    gap: 20px;
+  }
+  .tenant {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .property {
+    width: 200px;
+    height: 100px;
+    background-color: white;
+    border: 1px solid lightgrey;
+    border-radius: 10px;
+    box-shadow: 0, 0, 10px black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .property:hover {
+    box-shadow: 0 0 10px rgba(231, 6, 6, 0.849);
+    transition: all 200ms ease-in-out;
+    cursor: pointer;
+  }
+  .input-row {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  
+  .input-label-group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .input-label {
+    font-weight: 600;
+    margin-top: 10px;
+  }
+  
+  .input-field {
+    width: 400px;
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .forgot-link {
+    font-weight: 600;
+    color: #ff1e58;
+    text-decoration: none;
+    font-size: 14px;
+  }
+  
+  .remember-label {
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+    color: lightgray;
+    gap: 8px;
+    margin-top: 10px;
+  }
+  
+  .remember-checkbox {
+    accent-color: #ff1e58;
+  }
+ 
+  .btnholder {
+    margin-top: 30px;
+  }
+  .googlebtn {
+    padding: 10px;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    width: 200px;
+    background-color: white;
+  }
+  .facebtn {
+    padding: 10px;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    width: 200px;
+    background-color: white;
+  }
+  .lasttext {
+    margin-top: 20px;
+    color: black;
+  }
+  .lasttext span a {
+    color: #6c7ba8;
+    text-decoration: none;
+  }
+  .buttonholder a{
+    text-decoration: none;
+    color: white;
+  }
