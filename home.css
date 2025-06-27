@@ -1,0 +1,229 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.body {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.headerHolder {
+  width: 100%;
+  height: 70px;
+  background-color: #f1f3f8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header {
+  width: 90%;
+  height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f1f3f8;
+}
+.navholder {
+  display: flex;
+  width: 380px;
+  height: 70px;
+  justify-content: space-between;
+  align-items: center;
+}
+.navs {
+  color: #6c7ba8;
+  cursor: pointer;
+}
+.buttonholder {
+  width: 180px;
+  height: 50px;
+  background-color: #f1f3f8;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.headerbutton {
+  width: 80px;
+  height: 40px;
+  background-color: #6c7ba8;
+  border-radius: 6px;
+  color: white;
+  font-weight: bold;
+  border: none;
+}
+.headerbutton2 {
+  width: 80px;
+  height: 40px;
+  background-color: #f1f3f8;
+  border-radius: 6px;
+  color: #6c7ba8;
+  font-weight: bold;
+  border: 1px solid #6c7ba8;
+}
+.hero {
+  width: 100%;
+  height: 640px;
+  background-color: #f1f3f8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.heroholder {
+  width: 90%;
+  height: 600px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.lefthero {
+  width: 45%;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.herotext {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.righthero {
+  width: 45%;
+  height: 500px;
+}
+.righthero img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+.sectionholder {
+  width: 100%;
+  height: 160px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.section1 {
+  width: 65%;
+  height: 160px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -55px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+.boxes {
+  width: 230px;
+  height: 160px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  border-radius: 5px;
+  border-right: 2px solid lightgray;
+}
+.box {
+  width: 230px;
+  height: 160px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  border-radius: 5px;
+}
+.buttonholder2 {
+  width: 220px;
+  height: 50px;
+  background-color: #f1f3f8;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.herobutton {
+  width: 100px;
+  height: 40px;
+  background-color: #6c7ba8;
+  border-radius: 4px;
+  color: white;
+  font-weight: bold;
+  border: none;
+}
+.herobutton2 {
+  width: 100px;
+  height: 40px;
+  background-color: #f1f3f8;
+  border-radius: 4px;
+  color: #6c7ba8;
+  font-weight: bold;
+  border: 1px solid #6c7ba8;
+}
+
+.section2 {
+  width: 100%;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.sectionholder2 {
+  width: 90%;
+  height: 500px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.leftsection {
+  width: 45%;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.rightsection {
+  width: 45%;
+  height: 400px;
+}
+.rightsection img {
+  object-fit: contain;
+  width: 100%;
+  height: 100%;
+}
+.section3 {
+  width: 100%;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.sectionholder3 {
+  width: 60%;
+  height: 160px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 40px;
+}
+.box2 {
+  width: 160px;
+  height: 170px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #fcfcfc;
+  border-radius: 5px;
+}
+@media (max-width: 425px) {
+}
