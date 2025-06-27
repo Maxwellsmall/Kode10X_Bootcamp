@@ -36,6 +36,10 @@
   color: #6c7ba8;
   cursor: pointer;
 }
+.navs a {
+  color: #6c7ba8;
+  text-decoration: none;
+}
 .buttonholder {
   width: 180px;
   height: 50px;
@@ -75,25 +79,26 @@
   height: 600px;
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  margin-top: 50px;
 }
 .lefthero {
   width: 45%;
-  height: 500px;
+  height: 400px;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
 }
 .herotext {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
 }
 .righthero {
   width: 45%;
   height: 500px;
+  display: flex;
+  background-color: rgba(248, 246, 246, 0.897);
+  border-radius: 6px;
 }
 .righthero img {
   object-fit: cover;
@@ -141,10 +146,7 @@
 .buttonholder2 {
   width: 220px;
   height: 50px;
-  background-color: #f1f3f8;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
   margin-top: 20px;
 }
 
@@ -157,15 +159,6 @@
   font-weight: bold;
   border: none;
 }
-.herobutton2 {
-  width: 100px;
-  height: 40px;
-  background-color: #f1f3f8;
-  border-radius: 4px;
-  color: #6c7ba8;
-  font-weight: bold;
-  border: 1px solid #6c7ba8;
-}
 
 .section2 {
   width: 100%;
@@ -174,6 +167,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-top: 50px;
 }
 .sectionholder2 {
   width: 90%;
@@ -193,6 +187,7 @@
 .rightsection {
   width: 45%;
   height: 400px;
+  background-color: rgba(253, 249, 249, 0.466);
 }
 .rightsection img {
   object-fit: contain;
@@ -208,22 +203,132 @@
   flex-direction: column;
 }
 .sectionholder3 {
-  width: 60%;
+  width: 90%;
   height: 160px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: 40px;
+  margin-top: 60px;
 }
 .box2 {
-  width: 160px;
-  height: 170px;
+  width: 260px;
+  height: 190px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   background-color: #fcfcfc;
   border-radius: 5px;
+}
+.section4 {
+  width: 100%;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+}
+.cardholder {
+  display: flex;
+  width: 95%;
+  align-items: center;
+  justify-content: space-between;
+}
+.nameholder {
+  width: 50px;
+  height: 50px;
+  background-color: lightgray;
+  border-radius: 50%;
+  margin-top: 20px;
+}
+.nameholder img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.wrapper {
+  width: 100%;
+  margin-top: 50px;
+  max-width: 700px;
+  display: flex;
+  overflow-y: hidden;
+  overflow-x: scroll;
+  background-color: white;
+  gap: 14px;
+}
+.container {
+  max-width: 300px;
+  flex-shrink: 0;
+  padding: 36px;
+  background-color: #fcfcfc;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.section5 {
+  width: 100%;
+  height: 500px;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  display: flex;
+}
+.text {
+  width: 500px;
+  height: 400px;
+  background: linear-gradient(rgba(0, 0, 0, 0.75)),
+    url("./images/Frame\ 95.png");
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-top-right-radius: 60px;
+  border-bottom-right-radius: 60px;
+  border-bottom-left-radius: 60px;
+  border-top-left-radius: 60px;
+}
+.sectionbutton5 {
+  width: 100px;
+  height: 40px;
+  background-color: #6c7ba8;
+  border-radius: 4px;
+  color: white;
+  font-weight: bold;
+  margin-top: 10px;
+  border: none;
+}
+.section6 {
+  width: 100%;
+  height: 300px;
+  background-color: #6c7ba8;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.footerholder {
+  display: flex;
+  width: 350px;
+  height: 70px;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav {
+  color: white;
+  cursor: pointer;
+}
+
+.footericon {
+  display: flex;
+  width: 250px;
+  height: 70px;
+  justify-content: space-between;
+  align-items: center;
+}
+hr {
+  width: 90%;
+  height: 1px;
+  background-color: white;
 }
 @media (max-width: 425px) {
 }
