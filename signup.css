@@ -80,30 +80,14 @@
   .input {
     display: flex;
     flex-direction: column;
-    margin-top: 20px;
-    gap: 20px;
+    gap: 8px;
   }
   .tenant {
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
-  .property {
-    width: 200px;
-    height: 100px;
-    background-color: white;
-    border: 1px solid lightgrey;
-    border-radius: 10px;
-    box-shadow: 0, 0, 10px black;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .property:hover {
-    box-shadow: 0 0 10px rgba(231, 6, 6, 0.849);
-    transition: all 200ms ease-in-out;
-    cursor: pointer;
-  }
+ 
   .input-row {
     display: flex;
     flex-direction: column;
@@ -118,7 +102,7 @@
   
   .input-label {
     font-weight: 600;
-    margin-top: 10px;
+    margin-top: 5px;
   }
   
   .input-field {

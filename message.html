@@ -7,7 +7,7 @@
     <title>Document</title>
   </head>
   <body>
-    <h1 style="font-family: sans-serif;">Share How You You Feel</h1>
+    <h1 style="font-family: sans-serif">Share How You You Feel</h1>
     <p
       style="
         font-family: sans-serif;
@@ -19,25 +19,35 @@
       This is your space. Write from your mind, Stay anonymous. Be real, we are
       here to listen
     </p>
-    <textarea
-      name=""
-      id=""
-      cols="38"
-      row="5"
-      placeholder="what is on your mind?"
-      style="padding: 30px; background-color: #3e4a6b; margin-top: 10px; border-radius: 5px; "
-    ></textarea>
-    <button
-      style="
-        padding: 15px;
-        color: white;
-        border: none;
-        border-radius: 5px;
-        background-color: #6c7ba8;
-        margin-top: 10px;
-      "
-    >
-      Share Anonymously
-    </button>
+    <form action="" id="myForm" >
+      <textarea
+        name=""
+        id="preview"
+        cols="38"
+        row="5"
+        placeholder="what is on your mind?"
+        style="
+          padding: 60px;
+          background-color: #3e4a6b;
+          margin-top: 10px;
+          border-radius: 5px;
+          color: white;
+        "
+      ></textarea>
+      <button
+        style="
+          padding: 15px;
+          color: white;
+          border: none;
+          border-radius: 5px;
+          background-color: #6c7ba8;
+          margin-top: 10px;
+        "
+        type="submit"
+      >
+        Share Anonymously
+      </button>
+    </form>
+    <script src="./index.js"></script>
   </body>
 </html>

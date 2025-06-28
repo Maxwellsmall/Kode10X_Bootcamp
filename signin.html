@@ -21,16 +21,16 @@
           <div class="input-row">
             <label for="email" class="input-label">Email</label>
             <input
-              type="text"
+              type="email"
               id="email"
               class="input-field"
               placeholder="Enter your email"
               style="
                 width: 400px;
-                padding: 20px;
+                padding: 16px;
                 border: none;
                 border-radius: 5px;
-                margin-top: 10px;
+                margin-top: 5px;
                 border: 2px solid #6c7ba8;
               "
             />
@@ -38,16 +38,16 @@
           <div class="input-row">
             <label for="email" class="input-label">Password</label>
             <input
-              type="text"
-              id="email"
+              type="password"
+              id="loginPassword"
               class="input-field"
               placeholder="Enter your email"
               style="
                 width: 400px;
-                padding: 20px;
+                padding: 16px;
                 border: none;
                 border-radius: 5px;
-                margin-top: 10px;
+                margin-top: 5px;
                 border: 2px solid #6c7ba8;
               "
             />
@@ -64,21 +64,26 @@
               background-color: #6c7ba8;
               margin-top: 10px;
               border: none;
+              border-radius: 5px;
               margin-top: 15px;
             "
+            <!--
+            onclick="login()"
+            --
           >
-            <a href="./home.html">Sign In</a>
+            <a href="./message.html"> Signin</a>
           </button>
         </div>
 
         <p class="lasttext">
           Don't have an account?
           <span style="color: #ff1e58"
-            ><a href="./getstarted.html"> Sign up</a></span
+            ><a href="./signup.html"> Sign up</a></span
           >
         </p>
       </div>
       <div class="imageholder"></div>
     </div>
+    <script src="./index.js"></script>
   </body>
 </html>

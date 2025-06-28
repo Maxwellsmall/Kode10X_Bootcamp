@@ -13,3 +13,11 @@ body{
 textarea::placeholder{
     color: white;
 }
+form{
+    display: flex;
+    height: 300px;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
