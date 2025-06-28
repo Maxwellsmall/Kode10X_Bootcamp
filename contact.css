@@ -25,9 +25,10 @@
 }
 .navholder {
   display: flex;
-  width: 380px;
+  width: 300px;
   height: 70px;
   justify-content: space-between;
+  font-family: sans-serif;
   align-items: center;
 }
 .navs {
@@ -109,13 +110,7 @@
   cursor: pointer;
 }
 
-.footericon {
-  display: flex;
-  width: 250px;
-  height: 70px;
-  justify-content: space-between;
-  align-items: center;
-}
+
 hr {
   width: 90%;
   height: 1px;
