@@ -1,164 +1,227 @@
 * {
-    margin: 0;
-    padding: 0;
-  }
-  body {
-    width: 100%;
-    height: 100%;
-    background-color: white;
+  margin: 0;
+  padding: 0;
+}
+body {
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  font-family: sans-serif;
+}
+.mainholder {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loginholder {
+  width: 50%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.imageholder {
+  width: 50%;
+  height: 685px;
+  background-image: url("./images/Rectangle\ 3.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.welcomeholder {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.input {
+  margin-top: 20px;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.input-row {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.inputfield {
+  width: 400px;
+  padding: 8px;
+  font-size: 16px;
+  border: 17px solid #ccc;
+  border-radius: 40px;
+}
+.buttonholder {
+  width: 90%;
+  height: 100px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+.btn {
+  width: 90%;
+  color: white;
+  font-weight: bold;
+  font-size: 15px;
+  padding: 20px;
+  background-color: #6c7ba8;
+  margin-top: 20px;
+  border: none;
+  border-radius: 5px;
+}
+.input-label-group {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.input-label {
+  font-weight: 600;
+  margin-top: 5px;
+}
+
+.lasttext {
+  margin-top: 20px;
+  color: black;
+}
+.lasttext span a {
+  color: #6c7ba8;
+  text-decoration: none;
+}
+.buttonholder a {
+  text-decoration: none;
+  color: white;
+}
+
+@media (max-width: 425px) {
+  .mainholder {
     display: flex;
     flex-direction: column;
-    font-family: sans-serif;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
   }
+  .imageholder {
+    display: none;
+  }
+  .loginholder {
+    width: 100%;
+    height: 100vh;
+  }
+  .welcomeholder {
+    width: 90%;
+    height: auto;
+  }
+  .input {
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .input-row {
+    width: 90%;
+    height: auto;
+  }
+  .buttonholder {
+    width: 100%;
+    height: 100px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+  }
+  .btn {
+    width: 90%;
+  }
+}
+@media (min-width: 426px) and (max-width: 768px) {
+  .mainholder {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+  }
+  .imageholder {
+    display: none;
+  }
+  .loginholder {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .welcomeholder {
+    width: 90%;
+    height: auto;
+  }
+  .input {
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .input-row {
+    width: 90%;
+    height: auto;
+  }
+  .buttonholder {
+    width: 100%;
+    height: 100px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+  }
+  .btn {
+    width: 90%;
+    height: auto;
+  }
+}
+ @media (min-width: 769px) {
   .mainholder {
     width: 100%;
     height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
   }
-  .loginholder {
-    width: 50%;
-    height: 100vh;
-    background-color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-  }
-  .imageholder {
+   .loginholder{
     width: 50%;
     height: 685px;
-    background-image: url("./images/Rectangle\ 3.png");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
   }
-  .container {
-    display: flex;
-    flex-direction: column;
+   .imageholder{
+    width: 50%;
+    height: 100vh;
   }
-  .imagehold5 {
-    display: flex;
-    margin-top: 20px;
-    align-items: center;
-  }
-  .cards {
-    display: flex;
-    width: 100%;
-    margin-top: 410px;
-  }
-  .cardHolder {
-    width: 450px;
-    height: 270px;
-    border-radius: 10px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    border: 1px solid lightgray;
-    background-color: white;
-    margin-left: 200px;
-  }
-  .content2 {
+  .input{
     width: 90%;
-  }
-  .bioholder {
-    margin-top: 10px;
-    color: rgb(139, 132, 132);
-  }
-  .bioholder p {
-    font-size: 16px;
+    height: 400px;
+    margin-top: 20px;
   }
   
-  .welcomeholder {
-    display: flex;
+  .buttonholder {
+    width: 90%;
+    height: 100px;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
-  }
-  .input {
     display: flex;
-    flex-direction: column;
-    gap: 8px;
   }
-  .tenant {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  .btn {
+    width: 600px;
+    height: auto;
   }
- 
-  .input-row {
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-  }
-  
-  .input-label-group {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
-  .input-label {
-    font-weight: 600;
-    margin-top: 5px;
-  }
-  
-  .input-field {
-    width: 400px;
-    padding: 8px;
-    font-size: 16px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-  }
-  
-  .forgot-link {
-    font-weight: 600;
-    color: #ff1e58;
-    text-decoration: none;
-    font-size: 14px;
-  }
-  
-  .remember-label {
-    display: flex;
-    align-items: center;
-    font-weight: 600;
-    color: lightgray;
-    gap: 8px;
-    margin-top: 10px;
-  }
-  
-  .remember-checkbox {
-    accent-color: #ff1e58;
-  }
- 
-  .btnholder {
-    margin-top: 30px;
-  }
-  .googlebtn {
-    padding: 10px;
-    border: 1px solid lightgray;
-    border-radius: 5px;
-    width: 200px;
-    background-color: white;
-  }
-  .facebtn {
-    padding: 10px;
-    border: 1px solid lightgray;
-    border-radius: 5px;
-    width: 200px;
-    background-color: white;
-  }
-  .lasttext {
-    margin-top: 20px;
-    color: black;
-  }
-  .lasttext span a {
-    color: #6c7ba8;
-    text-decoration: none;
-  }
-  .buttonholder a{
-    text-decoration: none;
-    color: white;
-  }
+
+}  

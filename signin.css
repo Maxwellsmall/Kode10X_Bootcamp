@@ -1,114 +1,201 @@
 * {
-    margin: 0;
-    padding: 0;
-  }
-  body {
-    width: 100%;
-    height: 100%;
-    background-color: white;
-    display: flex;
-    flex-direction: column;
-    font-family: sans-serif;
-  }
+  margin: 0;
+  padding: 0;
+}
+body {
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  font-family: sans-serif;
+}
+.mainholder {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.loginholder {
+  width: 50%;
+  height: 680px;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.imageholder {
+  width: 50%;
+  height: 680px;
+  background-image: url("./images/Rectangle\ 5.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.buttonholder {
+  width: 100%;
+  height: 100px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+.btn{
+  width: 90%;
+  color: white;
+  font-weight: bold;
+  font-size: 15px;
+  padding: 20px;
+  background-color: #6c7ba8;
+  border: none;
+  border-radius: 5px;
+  margin-top: 15px;
+}
+
+@media (max-width: 425px) {
   .mainholder {
     width: 100%;
     height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: red;
-  }
-  .loginholder {
-    width: 50%;
-    height: 680px;
-    background-color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
   }
   .imageholder {
-    width: 50%;
-    height: 680px;
-    background-image: url("./images/Rectangle\ 5.png");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+    display: none;
   }
-
- 
-  
-  .welcomeholder {
+  .loginholder {
+    width: 100%;
+    height: 100vh;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
+  }
+  .welcomeholder {
+    width: 90%;
+    height: auto;
   }
   .input {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-  }
-  
-  .input-row {
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
-  }
-  
-  .input-label-group {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
-  .input-label {
-    font-weight: 600;
-    margin-top: 10px;
-  }
-  
-  .input-field {
-    width: 400px;
-    padding: 5px;
-    font-size: 16px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-  }
-  
-  .forgot-link {
-    font-weight: 600;
-    color: #ff1e58;
-    text-decoration: none;
-    font-size: 14px;
-  }
-  
-  .remember-label {
-    display: flex;
-    align-items: center;
-    font-weight: 600;
-    color: lightgray;
-    gap: 8px;
-    margin-top: 10px;
-  }
-  
-  .remember-checkbox {
-    accent-color: #ff1e58;
-  }
-
- 
-  .btnholder {
-    margin-top: 30px;
-  }
-  
-  .lasttext {
+    width: 100%;
+    height: auto;
     margin-top: 20px;
-    color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
-  .lasttext span a{
-      color: #6c7ba8;
-      text-decoration: none;
+  .input-row {
+    width: 90%;
+    height: auto;
   }
-  .buttonholder a{
-    color: white;
-    text-decoration: none;
+  .buttonholder {
+    width: 100%;
+    height: 100px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
   }
+  .btn {
+    width: 90%;
+  }
+}
+@media (min-width: 426px) and (max-width: 768px){
+  .mainholder {
+    width: 100%;
+    height: 100vh;
+  }
+  .imageholder {
+    display: none;
+  }
+  .loginholder {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .welcomeholder {
+    width: 90%;
+    height: auto;
+  }
+  .input {
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .input-row {
+    width: 90%;
+    height: auto;
+  }
+  .buttonholder {
+    width: 100%;
+    height: 100px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+  }
+  .btn {
+    width: 90%;
+  }
+}
+
+
+.welcomeholder {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.input {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.input-row {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.input-label-group {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.input-label {
+  font-weight: 600;
+  margin-top: 10px;
+}
+
+.input-field {
+  width: 400px;
+  padding: 5px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+
+
+
+.btnholder {
+  margin-top: 30px;
+}
+
+.lasttext {
+  margin-top: 20px;
+  color: black;
+}
+.lasttext span a {
+  color: #6c7ba8;
+  text-decoration: none;
+}
+.buttonholder a {
+  color: white;
+  text-decoration: none;
+}

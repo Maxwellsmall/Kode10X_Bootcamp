@@ -8,7 +8,6 @@
     <title>login</title>
   </head>
   <body>
-    
     <div class="mainholder">
       <div class="imageholder"></div>
       <div class="loginholder">
@@ -19,14 +18,14 @@
         </div>
         <div class="input">
           <div class="input-row">
-            <label for="full name" class="input-label">Full name</label>
+            <label for="email" class="input-label">Full name</label>
             <input
               type="text"
+              id="fullname"
               class="input-field"
               placeholder="John Doe"
-              id="fullname"
               style="
-                width: 400px;
+                width: 90%;
                 padding: 16px;
                 border: none;
                 border-radius: 5px;
@@ -43,7 +42,7 @@
               class="input-field"
               placeholder="Enter your email"
               style="
-                width: 400px;
+                width: 90%;
                 padding: 16px;
                 border: none;
                 border-radius: 5px;
@@ -60,7 +59,7 @@
               class="input-field"
               placeholder="Enter your email"
               style="
-                width: 400px;
+                width: 90%;
                 padding: 16px;
                 border: none;
                 border-radius: 5px;
@@ -77,7 +76,7 @@
               placeholder="Enter your email"
               id="signPass"
               style="
-                width: 400px;
+                width: 90%;
                 padding: 16px;
                 border: none;
                 border-radius: 5px;
@@ -88,23 +87,7 @@
           </div>
         </div>
         <div class="buttonholder">
-          <button
-            style="
-              width: 440px;
-              color: white;
-              font-weight: bold;
-              font-size: 15px;
-              padding: 20px;
-              background-color: #6c7ba8;
-              margin-top: 10px;
-              border: none;
-              border-radius: 5px;
-              margin-top: 15px;
-            "
-           onclick='signUp()'
-          >
-         Signup
-          </button>
+          <button class="btn" onclick="signUp()">Signup</button>
         </div>
 
         <p class="lasttext">
