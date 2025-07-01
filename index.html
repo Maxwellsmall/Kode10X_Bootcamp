@@ -3,6 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="./fontawesome-free-6.7.1-web/fontawesome-free-6.7.1-web/css/all.css"
+    />
     <link rel="stylesheet" href="style.css" />
     <title>Document</title>
   </head>
@@ -22,21 +26,28 @@
             <a href="./signup.html">Signup</a>
           </button>
         </div>
+        <i class="fa-solid fa-bars" id="burgerOpen"></i>
+        <div class="burgermenu" id="burgerMenu">
+          <div class="navholder2">
+            <div class="navs">Home</div>
+            <div class="navs"><a href="./about.html">About</a></div>
+            <div class="navs"><a href="./contact.html">Contact</a></div>
+          </div>
+          <div class="buttonholder">
+            <button class="headerbutton">
+              <a href="./signup.html">Signup</a>
+            </button>
+            <i class="fa-solid fa-times" id="burgerClose"></i>
+          </div>
+        </div>
       </div>
     </div>
     <div class="hero">
       <div class="heroholder">
         <div class="lefthero">
           <div class="herotext">
-            <h1
-              class="headtext"
-            >
-              Mental Health Matters in the Classroom Too
-            </h1>
-            <p
-             
-              class="headbodytext"
-            >
+            <h1 class="headtext">Mental Health Matters in the Classroom Too</h1>
+            <p class="headbodytext">
               Every student deserves to feel safe, heard, and mentally well.
               Let's break the silence around mental health in education.
             </p>
@@ -55,7 +66,7 @@
         </div>
       </div>
     </div>
-   <div class="sectionholder">
+    <div class="sectionholder">
       <div class="section1">
         <div class="boxes">
           <p
@@ -67,9 +78,7 @@
           >
             4 in 5
           </p>
-          <p
-            class="boxesp"
-          >
+          <p class="boxesp">
             students say our platform helps them manage stress and stay focused
             in school.
           </p>
@@ -84,9 +93,7 @@
           >
             93%
           </p>
-          <p
-          class="boxesp"
-          >
+          <p class="boxesp">
             of students who used our resources reported feeling more understood
             and supported.
           </p>
@@ -101,8 +108,7 @@
           >
             89%
           </p>
-          <p
-          class="boxesp"          >
+          <p class="boxesp">
             attended their first mental health session within 5 days of signing
             up.
           </p>
@@ -117,8 +123,7 @@
           >
             84%
           </p>
-          <p
-          class="boxp"          >
+          <p class="boxp">
             of students with moderate to severe anxiety showed improvement after
             4 weeks.
           </p>
@@ -126,9 +131,7 @@
       </div>
     </div>
     <div class="section2">
-      <h2 class="leftsectionheadtext">
-        Why Mental Health In School
-      </h2>
+      <h2 class="leftsectionheadtext">Why Mental Health In School</h2>
       <div class="sectionholder2">
         <div class="leftsection">
           <p class="leftsectionbodytext">
@@ -143,9 +146,7 @@
       </div>
     </div>
     <div class="section3">
-      <h3 class="sectionheadtext3">
-        What You Offer
-      </h3>
+      <h3 class="sectionheadtext3">What You Offer</h3>
       <div class="sectionholder3">
         <div class="box2">
           <img src="./images/Vector.png" alt="" />
@@ -219,9 +220,7 @@
     </div>
 
     <div class="section4">
-      <h3 class="section4headtext">
-        Testimonies
-      </h3>
+      <h3 class="section4headtext">Testimonies</h3>
       <div class="wrapper">
         <div class="container">
           <p>
@@ -297,10 +296,12 @@
         >
           Join Community
         </p>
-        <button class="sectionbutton5">Get In Touch</button>
+        <button class="sectionbutton5">
+          <a href="./contact.html">Get In Touch</a>
+        </button>
       </div>
     </div>
-   <div class="section6">
+    <div class="section6">
       <div class="footerholder">
         <div class="nav">Home</div>
         <div class="nav">About</div>
@@ -311,6 +312,7 @@
       <p style="font-size: 15px; margin-top: 10px; color: white">
         © 2025 6thTouch Academy | All Rights Reserved
       </p>
-    </div> 
+    </div>
+    <script src="./index.js"></script>
   </body>
 </html>

@@ -9,6 +9,10 @@
   align-items: center;
   justify-content: center;
 }
+
+.fa-bars{
+  display: none;
+}
 .headerHolder {
   width: 100%;
   height: 70px;
@@ -68,7 +72,70 @@
   text-decoration: none;
   color: #6c7ba8;
 }
+.burgermenu{
+  display: none;
+   position: fixed;
+   top: 0;
+   right: 0;
+   width: 30%;
+   height: 100%;
+   background-color: white;
+   z-index: 999;
+  
+}
+.navholder2 {
+width: 80%;
+max-width: 300px;
+height: 40%;
+padding: 20px;
+box-sizing: border-box;
+display: flex;
+flex-direction: column;
+gap: 20px;
+ /* position: fixed; */
+top: 0;
+right: 0; 
+font-family: sans-serif;
+}
+.navs {
+  color: #6c7ba8;
+  cursor: pointer;
+}
+.navs a {
+  color: #6c7ba8;
+  text-decoration: none;
+}
 
+.headerbutton {
+  width: 80px;
+  height: 40px;
+  background-color: #6c7ba8;
+  border-radius: 6px;
+  color: white;
+  font-weight: bold;
+  border: none;
+}
+.headerbutton a {
+  color: #6c7ba8;
+  text-decoration: none;
+}
+.headerbutton2 {
+  width: 80px;
+  height: 40px;
+  background-color: #f1f3f8;
+  border-radius: 6px;
+  color: #6c7ba8;
+  font-weight: bold;
+  border: 1px solid #6c7ba8;
+}
+.headerbutton2 a {
+  text-decoration: none;
+  color: #6c7ba8;
+}
+.fa-times{
+  font-size: 24px;
+  cursor: pointer;
+}
 .hero {
   width: 100%;
   height: 640px;
@@ -217,13 +284,13 @@
   font-family: sans-serif;
 }
 .leftsectionbodytext {
-  font-size: 30px;
+  font-size: 25px;
   font-family: sans-serif;
   color: #3e4a6b;
 }
 .rightsection {
   width: 45%;
-  height: 400px;
+  height: 380px;
   background-color: rgba(253, 249, 249, 0.466);
 }
 .rightsection img {
@@ -232,6 +299,7 @@
   height: 100%;
 }
 .section3 {
+  margin-top: 40px;
   width: 100%;
   height: 300px;
   display: flex;
@@ -253,7 +321,7 @@
   margin-top: 60px;
 }
 .box2 {
-  width: 260px;
+  width: 250px;
   height: 190px;
   display: flex;
   flex-direction: column;
@@ -282,6 +350,7 @@
   width: 95%;
   align-items: center;
   justify-content: space-between;
+  text-align: justify;
 }
 .nameholder {
   width: 50px;
@@ -301,7 +370,7 @@
   max-width: 90%;
   display: flex;
   overflow-y: hidden;
-  overflow-x: scroll;
+  overflow-x: hidden;
   gap: 14px;
 }
 .container {
@@ -343,6 +412,13 @@
   font-weight: bold;
   margin-top: 10px;
   border: none;
+}
+.sectionbutton5 {
+  cursor: pointer;
+}
+.sectionbutton5 a {
+  color: white;
+  text-decoration: none;
 }
 .section6 {
   width: 100%;
@@ -394,10 +470,16 @@ hr {
   .navholder {
     width: 180px;
     font-size: 14px;
+    display: none;
+  }
+  .fa-bars{
+    display: block;
+    font-size: 24px;
   }
   .headerbutton2 {
     width: 60px;
     height: 30px;
+    display: none;
   }
   .headerbutton2 {
     width: 60px;
@@ -422,17 +504,24 @@ hr {
     justify-content: center;
     align-items: center;
   }
+  .buttonholder2 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
   .headtext {
     font-size: 33px;
-    text-align: left;
+    text-align: center;
   }
   .headbodytext {
-    text-align: left;
+    text-align: center;
     font-size: 16px;
   }
   .righthero {
     width: 100%;
     height: 300px;
+    margin-top: 10px;
   }
   .sectionholder {
     width: 100%;
@@ -478,6 +567,7 @@ hr {
   }
   .leftsectionbodytext {
     font-size: 27px;
+    text-align: center;
   }
   .rightsection {
     width: 90%;
@@ -505,6 +595,7 @@ hr {
     width: 100%;
     height: 200px;
     border-bottom: 2px solid lightgray;
+    margin-bottom: 20px;
   }
   .section4 {
     width: 100%;
@@ -664,6 +755,7 @@ hr {
     width: 100%;
     height: 200px;
     border-bottom: 2px solid lightgray;
+    margin-bottom: 20px;
   }
   .section4 {
     width: 100%;
@@ -710,8 +802,8 @@ hr {
     height: 70px;
   }
   .logo {
-    width: 8px;
-    height: 33px;
+    width: 85px;
+    height: 35px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -823,10 +915,7 @@ hr {
     height: auto;
     display: flex;
   }
-  .box2 {
-    width: 100%;
-    height: 200px;
-  }
+
   .section4 {
     width: 100%;
     height: auto;

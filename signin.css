@@ -1,6 +1,6 @@
 * {
-  margin: 0;
-  padding: 0;
+  margin: 0px;
+  padding: 0px;
 }
 body {
   width: 100%;
@@ -28,7 +28,7 @@ body {
 }
 .imageholder {
   width: 50%;
-  height: 680px;
+  height: 100vh;
   background-image: url("./images/Rectangle\ 5.png");
   background-size: cover;
   background-position: center;
@@ -42,7 +42,7 @@ body {
   display: flex;
 }
 .btn{
-  width: 90%;
+  width: 440px;
   color: white;
   font-weight: bold;
   font-size: 15px;

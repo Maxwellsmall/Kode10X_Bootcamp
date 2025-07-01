@@ -98,3 +98,16 @@ function reply(i) {
 document.addEventListener("DOMContentLoaded", function () {
   showMessage(output);
 });
+
+document.addEventListener("click", function () {
+  const burgerOpen = document.getElementById("burgerOpen");
+  const burgerMenu = document.getElementById("burgerMenu");
+  const burgerClose = document.getElementById("burgerClose");
+
+  burgerOpen.onclick = function () {
+    burgerMenu.style.display = "block";
+  };
+  burgerClose.onclick = function () {
+    burgerMenu.style.display = "none";
+  };
+});
