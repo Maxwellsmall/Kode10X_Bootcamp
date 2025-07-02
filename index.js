@@ -44,6 +44,7 @@ function login() {
     alert("login fail");
   }
 }
+window.login = login;
 
 let message = JSON.parse(localStorage.getItem("message") || "[]");
 

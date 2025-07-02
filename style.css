@@ -380,6 +380,7 @@ font-family: sans-serif;
   display: flex;
   justify-content: center;
   flex-direction: column;
+  text-align: justify;
 }
 .section5 {
   width: 100%;
