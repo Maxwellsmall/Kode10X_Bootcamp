@@ -69,7 +69,10 @@ body {
   border-radius: 6px;
   cursor: pointer;
 }
-
+.btn a{
+  color: white;
+  text-decoration: none;
+}
 
  @media (max-width: 425px) {
   .mainholder {

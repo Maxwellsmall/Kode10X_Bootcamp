@@ -43,7 +43,7 @@ function login() {
   } else {
     alert("login fail");
   }
-};
+}
 
 let message = JSON.parse(localStorage.getItem("message") || "[]");
 
