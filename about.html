@@ -3,6 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="./fontawesome-free-6.7.1-web/fontawesome-free-6.7.1-web/css/all.css"
+    />
     <link rel="stylesheet" href="about.css" />
     <title>Document</title>
   </head>
@@ -18,30 +22,39 @@
           <div class="navs"><a href="./contact.html">Contact</a></div>
         </div>
         <div class="buttonholder">
-          <button class="headerbutton2"><a href="./signup.html">Signup</a></button>
+          <button class="headerbutton2">
+            <a href="./signup.html">Signup</a>
+          </button>
+        </div>
+        <i class="fa-solid fa-bars" id="burgerOpen"></i>
+        <div class="burgermenu" id="burgerMenu">
+          <div class="navholder2">
+            <div class="navs"><a href="./index.html">Home</a></div>
+            <div class="navs">About</div>
+            <div class="navs"><a href="./contact.html">Contact</a></div>
+          </div>
+          <div class="burgerholder">
+            <button class="burgerbutton">
+              <a href="./signup.html">Signup</a>
+            </button>
+            <i class="fa-solid fa-times" id="burgerClose"></i>
+          </div>
         </div>
       </div>
     </div>
-     <div class="hero">
+    <div class="hero">
       <div class="opacity"></div>
       <div class="heroholder">
         <div class="herotext">
-          <h1
-          class="headtext"
-          
-          >
-            Mental Health Matters in the Classroom Too
-          </h1>
-          <p
-        class="bodytext"
-          >
+          <h1 class="headtext">Mental Health Matters in the Classroom Too</h1>
+          <p class="bodytext">
             Every student deserves to feel safe, heard, and mentally well. Let's
             break the silence around mental health in education.
           </p>
         </div>
       </div>
     </div>
-   <div class="hero2">
+    <div class="hero2">
       <div class="heroholder2">
         <div class="lefthero2">
           <div class="herotext2">
@@ -55,9 +68,7 @@
             >
               Our Story
             </h1>
-            <p
-             class="leftherotext2"
-            >
+            <p class="leftherotext2">
               We saw it happen around us. Bright students pulling away. Friends
               too afraid to speak up. Young people struggling to make it through
               the The problem wasn’t just the struggle—it was the silence around
@@ -146,11 +157,12 @@
         <div class="nav">About</div>
         <div class="nav">Contact</div>
       </div>
-  
+
       <hr />
       <p style="font-size: 15px; margin-top: 10px; color: white">
         © 2025 Supportive | All Rights Reserved
       </p>
-    </div> 
+    </div>
+    <script src="./index.js"></script>
   </body>
 </html>

@@ -25,19 +25,25 @@ function signUp() {
 }
 
 function login() {
-  const username = document.getElementById("username").value.trim();
-
+  const usernameOrEmail = document.getElementById("username").value.trim();
   const password = document.getElementById("loginPassword").value.trim();
-
   const saveToLocal = JSON.parse(localStorage.getItem("user"));
-  console.log(saveToLocal);
 
-  if (username === saveToLocal.username && password === saveToLocal.password) {
+  if (!saveToLocal) {
+    alert("No user found. Please sign up first.");
+    return;
+  }
+
+  if (
+    (usernameOrEmail === saveToLocal.username ||
+      usernameOrEmail === saveToLocal.email) &&
+    password === saveToLocal.password
+  ) {
     alert("login successful");
   } else {
     alert("login fail");
   }
-}
+};
 
 let message = JSON.parse(localStorage.getItem("message") || "[]");
 

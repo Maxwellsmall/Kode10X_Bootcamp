@@ -41,55 +41,59 @@ body {
   flex-direction: column;
 }
 .input {
-  margin-top: 20px;
-  width: 80%;
+  width: 100%;
+  max-width: 440px;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  gap: 10px;
 }
+
 .input-row {
+  width: 100%;
+  margin-bottom: 16px;
   display: flex;
   flex-direction: column;
-  gap: 8px;
-}
-.inputfield {
-  width: 400px;
-  padding: 8px;
-  font-size: 16px;
-  border: 17px solid #ccc;
-  border-radius: 40px;
-}
-.buttonholder {
-  width: 90%;
-  height: 100px;
-  justify-content: center;
-  align-items: center;
-  display: flex;
-}
-.btn {
-  width: 90%;
-  color: white;
-  font-weight: bold;
-  font-size: 15px;
-  padding: 20px;
-  background-color: #6c7ba8;
-  margin-top: 20px;
-  border: none;
-  border-radius: 5px;
-}
-.input-label-group {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  gap: 2px;
 }
 
 .input-label {
-  font-weight: 600;
-  margin-top: 5px;
+  font-size: 15px;
+  color: #333;
 }
 
+.input-field {
+  width: 100%;
+  max-width: 440px;
+  box-sizing: border-box;
+  padding: 20px;
+  border: 2px solid #6c7ba8;
+  border-radius: 5px;
+  margin-top: 5px;
+  font-size: 15px;
+}
+
+.buttonholder {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.btn {
+  width: 100%;
+  max-width: 440px;
+  color: white;
+  font-weight: bold;
+  background-color: #6c7ba8;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  padding: 20px;
+  font-size: 15px;
+  margin-top: 10px;
+}
 .lasttext {
-  margin-top: 20px;
+  margin-top: 5px;
   color: black;
 }
 .lasttext span a {
@@ -135,14 +139,14 @@ body {
     height: auto;
   }
   .buttonholder {
-    width: 100%;
+    width: 90%;
     height: 100px;
     justify-content: center;
     align-items: center;
     display: flex;
   }
   .btn {
-    width: 90%;
+    width: 100%;
   }
 }
 @media (min-width: 426px) and (max-width: 768px) {
@@ -169,7 +173,7 @@ body {
     height: auto;
   }
   .input {
-    width: 100%;
+    width: 90%;
     height: auto;
     margin-top: 20px;
     display: flex;
@@ -178,18 +182,18 @@ body {
     justify-content: center;
   }
   .input-row {
-    width: 90%;
+    width: 100%;
     height: auto;
   }
   .buttonholder {
-    width: 100%;
+    width: 90%;
     height: 100px;
     justify-content: center;
     align-items: center;
     display: flex;
   }
   .btn {
-    width: 90%;
+    width: 100%;
     height: auto;
   }
 }
@@ -218,9 +222,11 @@ body {
     justify-content: center;
     align-items: center;
     display: flex;
+    margin-top: 24px;
   }
   .btn {
-    width: 600px;
+    width: 100%;
+    max-width: 440px;
     height: auto;
   }
 

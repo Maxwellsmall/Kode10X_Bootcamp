@@ -35,7 +35,16 @@ body {
   color: white;
   text-decoration: none;
 }
-
+.textarea{
+  padding: 60px;
+  background-color: #3e4a6b;
+  margin-top: 10px;
+  border-radius: 5px;
+  color: white;
+}
+.textarea::-webkit-scrollbar{
+  display: none;
+}
 .head{
   width: 100%;
   height: 100px;
@@ -54,4 +63,106 @@ form {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+}
+.headtext{
+  font-family: sans-serif
+}
+.headtextp{
+  font-family: sans-serif;
+  font-size: 18px;
+  text-align: center;
+  margin-top: 10px;
+}
+button{
+  padding: 15px;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  background-color: #6c7ba8;
+  margin-top: 10px;
+}
+
+@media (max-width: 425px){
+  .headerbtn{
+    width: 70px;
+    padding: 7px;
+  }
+  .head{
+    width: 90%;
+    height: 150px;
+  }
+  .textarea{
+    padding: 30px;
+  }
+  .headtext{
+    font-size: 18px;
+  }
+  .headtextp{
+    font-size: 15px;
+  }
+  form {
+    display: flex;
+    height: 150px;
+    width: 90%;
+    
+  }
+  button{
+    padding: 10px;
+  }
+}
+@media (min-width: 426px) and (max-width: 768px){
+  .headerbtn{
+    width: 80px;
+    padding: 8px;
+  }
+  .head{
+    width: 90%;
+    height: 190px;
+  }
+  .textarea{
+    padding: 60px;
+  }
+  .headtext{
+    font-size: 18px;
+  }
+  .headtextp{
+    font-size: 15px;
+  }
+  form {
+    display: flex;
+    height: 150px;
+    width: 90%;
+    
+  }
+  button{
+    padding: 15px;
+  }
+}
+@media(min-width: 769px){
+  .headerbtn{
+    width: 100px;
+    padding: 10px;
+  }
+  .head{
+    width: 90%;
+    height: 200px;
+  }
+  .textarea{
+    padding: 60px;
+  }
+  .headtext{
+    font-size: 28px;
+  }
+  .headtextp{
+    font-size: 18px;
+  }
+  form {
+    display: flex;
+    height: 150px;
+    width: 90%;
+    
+  }
+  button{
+    padding: 15px;
+  }
 }

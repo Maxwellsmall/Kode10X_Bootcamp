@@ -12,6 +12,7 @@
 
 .fa-bars{
   display: none;
+  cursor: pointer;
 }
 .headerHolder {
   width: 100%;
@@ -56,7 +57,7 @@
   border: none;
 }
 .headerbutton a {
-  color: #6c7ba8;
+  color: white;
   text-decoration: none;
 }
 .headerbutton2 {
@@ -77,9 +78,9 @@
    position: fixed;
    top: 0;
    right: 0;
-   width: 30%;
+   width: 40%;
    height: 100%;
-   background-color: white;
+   background-color: #f1f3f8;
    z-index: 999;
   
 }
@@ -105,35 +106,30 @@ font-family: sans-serif;
   color: #6c7ba8;
   text-decoration: none;
 }
+.burgerholder{
+  width: 120px;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
 
-.headerbutton {
-  width: 80px;
-  height: 40px;
-  background-color: #6c7ba8;
-  border-radius: 6px;
-  color: white;
-  font-weight: bold;
-  border: none;
 }
-.headerbutton a {
-  color: #6c7ba8;
-  text-decoration: none;
-}
-.headerbutton2 {
-  width: 80px;
-  height: 40px;
-  background-color: #f1f3f8;
-  border-radius: 6px;
-  color: #6c7ba8;
-  font-weight: bold;
+.burgerbutton{
+  width: 100px;
+  height: 50px;
   border: 1px solid #6c7ba8;
+  background-color: #f1f3f8;
+  font-weight: bold;
+  border-radius: 6px;
+
 }
-.headerbutton2 a {
-  text-decoration: none;
+.burgerbutton a{
   color: #6c7ba8;
+  text-decoration: none;
 }
 .fa-times{
-  font-size: 24px;
+  font-size: 30px;
   cursor: pointer;
 }
 .hero {
@@ -370,8 +366,11 @@ font-family: sans-serif;
   max-width: 90%;
   display: flex;
   overflow-y: hidden;
-  overflow-x: hidden;
+  overflow-x: scroll;
   gap: 14px;
+}
+.wrapper::-webkit-scrollbar{
+  display: none;
 }
 .container {
   max-width: 300px;
@@ -475,6 +474,7 @@ hr {
   .fa-bars{
     display: block;
     font-size: 24px;
+    cursor: pointer;
   }
   .headerbutton2 {
     width: 60px;
@@ -643,6 +643,11 @@ hr {
   .navholder {
     width: 220px;
     font-size: 18px;
+    display: none;
+  }
+  .fa-bars{
+    display: block;
+    font-size: 24px;
   }
   .headerbutton2 {
     width: 60px;
@@ -651,6 +656,7 @@ hr {
   .headerbutton2 {
     width: 70px;
     height: 40px;
+    display: none;
   }
   .hero {
     width: 100%;
@@ -671,12 +677,18 @@ hr {
     justify-content: center;
     align-items: center;
   }
+  .buttonholder2 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
   .headtext {
     font-size: 40px;
-    text-align: left;
+    text-align: center;
   }
   .headbodytext {
-    text-align: left;
+    text-align: center;
     font-size: 24px;
   }
   .righthero {

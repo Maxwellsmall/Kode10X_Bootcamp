@@ -34,26 +34,44 @@ body {
   background-position: center;
   background-repeat: no-repeat;
 }
-.buttonholder {
+/* ...existing code... */
+.inputholder {
   width: 100%;
-  height: 100px;
-  justify-content: center;
-  align-items: center;
-  display: flex;
+  max-width: 440px;
+  margin: 0 auto;
 }
-.btn{
-  width: 440px;
+
+.input-row {
+  width: 100%;
+  margin-bottom: 16px;
+}
+
+.input-field,
+.inputholder button {
+  width: 100%;
+  max-width: 440px;
+  box-sizing: border-box;
+  padding: 20px;
+  border-radius: 5px;
+  margin-top: 10px;
+  font-size: 15px;
+}
+
+.input-field {
+  border: 2px solid #6c7ba8;
+}
+
+.inputholder button {
   color: white;
   font-weight: bold;
-  font-size: 15px;
-  padding: 20px;
   background-color: #6c7ba8;
   border: none;
-  border-radius: 5px;
-  margin-top: 15px;
+  border-radius: 6px;
+  cursor: pointer;
 }
 
-@media (max-width: 425px) {
+
+ @media (max-width: 425px) {
   .mainholder {
     width: 100%;
     height: 100vh;
@@ -73,31 +91,43 @@ body {
     width: 90%;
     height: auto;
   }
-  .input {
-    width: 100%;
-    height: auto;
-    margin-top: 20px;
+  .inputholder {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    width: 100%;
   }
   .input-row {
-    width: 90%;
-    height: auto;
-  }
-  .buttonholder {
-    width: 100%;
-    height: 100px;
-    justify-content: center;
-    align-items: center;
     display: flex;
+    flex-direction: column;
+    align-items: flex-start; 
+    width: 90%;
   }
+  .input-field,
+  .inputholder button {
+    max-width: 90%;
+    font-size: 14px;
+    width: 90%;  
+    padding: 18px;
+  }
+  .input-field {
+    width: 100%;             
+    max-width: 100%;
+    font-size: 14px;
+    padding: 18px;
+  }
+  .inputholder button {
+    width: 90%;
+    max-width: 90%;
+    font-size: 14px;
+    padding: 18px;
+  }
+ 
   .btn {
     width: 90%;
   }
 }
-@media (min-width: 426px) and (max-width: 768px){
+@media (min-width: 426px) and (max-width: 768px) {
   .mainholder {
     width: 100%;
     height: 100vh;
@@ -117,18 +147,17 @@ body {
     width: 90%;
     height: auto;
   }
-  .input {
-    width: 100%;
-    height: auto;
-    margin-top: 20px;
+  .inputholder {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    width: 100%;
   }
-  .input-row {
-    width: 90%;
-    height: auto;
+  .input-field,
+  .inputholder button {
+    max-width: 100%;
+    font-size: 14px;
+    padding: 18px;
   }
   .buttonholder {
     width: 100%;
@@ -140,8 +169,7 @@ body {
   .btn {
     width: 90%;
   }
-}
-
+} 
 
 .welcomeholder {
   display: flex;
@@ -171,15 +199,6 @@ body {
   font-weight: 600;
   margin-top: 10px;
 }
-
-.input-field {
-  width: 400px;
-  padding: 5px;
-  font-size: 16px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-}
-
 
 
 

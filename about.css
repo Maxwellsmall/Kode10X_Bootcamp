@@ -9,6 +9,11 @@
   align-items: center;
   justify-content: center;
 }
+
+.fa-bars {
+  display: none;
+  cursor: pointer;
+}
 .headerHolder {
   width: 100%;
   height: 70px;
@@ -19,16 +24,18 @@
 }
 .header {
   width: 90%;
+  height: 70px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  background-color: #f1f3f8;
 }
 .navholder {
   display: flex;
-  width: 380px;
+  width: 300px;
   height: 70px;
-  font-family: sans-serif;
   justify-content: space-between;
+  font-family: sans-serif;
   align-items: center;
 }
 .navs {
@@ -36,16 +43,23 @@
   cursor: pointer;
 }
 .navs a {
-  text-decoration: none;
   color: #6c7ba8;
-}
-.buttonholder {
-  height: 50px;
-  background-color: #f1f3f8;
-  display: flex;
-  align-items: center;
+  text-decoration: none;
 }
 
+.headerbutton {
+  width: 80px;
+  height: 40px;
+  background-color: #6c7ba8;
+  border-radius: 6px;
+  color: white;
+  font-weight: bold;
+  border: none;
+}
+.headerbutton a {
+  color: white;
+  text-decoration: none;
+}
 .headerbutton2 {
   width: 80px;
   height: 40px;
@@ -55,10 +69,67 @@
   font-weight: bold;
   border: 1px solid #6c7ba8;
 }
-.headerbutton2 a{
+.headerbutton2 a {
+  text-decoration: none;
+  color: #6c7ba8;
+}
+.burgermenu {
+  display: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 40%;
+  height: 100%;
+  background-color: #f1f3f8;
+  z-index: 999;
+}
+.navholder2 {
+  width: 80%;
+  max-width: 300px;
+  height: 40%;
+  padding: 20px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  /* position: fixed; */
+  top: 0;
+  right: 0;
+  font-family: sans-serif;
+}
+.navs {
+  color: #6c7ba8;
+  cursor: pointer;
+}
+.navs a {
   color: #6c7ba8;
   text-decoration: none;
 }
+.burgerholder {
+  width: 120px;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.burgerbutton {
+  width: 100px;
+  height: 50px;
+  border: 1px solid #6c7ba8;
+  background-color: #f1f3f8;
+  font-weight: bold;
+  border-radius: 6px;
+}
+.burgerbutton a {
+  color: #6c7ba8;
+  text-decoration: none;
+}
+.fa-times {
+  font-size: 30px;
+  cursor: pointer;
+}
+
 .hero {
   width: 100%;
   height: calc(100vh - 70px);
@@ -121,7 +192,7 @@
   justify-content: center;
   align-items: center;
 }
-.leftherotext2{
+.leftherotext2 {
   color: white;
   text-align: left;
   font-family: sans-serif;
@@ -178,9 +249,12 @@
   max-width: 90%;
   display: flex;
   overflow-y: hidden;
-  overflow-x: hidden;
+  overflow-x: scroll;
   background-color: white;
   gap: 14px;
+}
+.wrapper::-webkit-scrollbar{
+  display: none;
 }
 .container {
   max-width: 300px;
@@ -249,10 +323,17 @@ hr {
   .navholder {
     width: 180px;
     font-size: 14px;
+    display: none;
+  }
+  .fa-bars {
+    display: block;
+    font-size: 24px;
   }
   .headerbutton2 {
     width: 60px;
     height: 30px;
+    display: none;
+
   }
   .hero {
     width: 100%;
@@ -262,12 +343,12 @@ hr {
     width: 90%;
     height: auto;
   }
-  .headtext{
+  .headtext {
     font-size: 30px;
     text-align: center;
     color: white;
   }
-  .bodytext{
+  .bodytext {
     font-size: 17px;
     text-align: center;
     color: white;
@@ -288,22 +369,22 @@ hr {
     align-items: center;
     justify-content: center;
   }
-  .lefthero2{
+  .lefthero2 {
     width: 90%;
     height: auto;
   }
-  .leftherotext2{
+  .leftherotext2 {
     font-size: 17px;
     text-align: center;
   }
-  .righthero2{
-   display: none;
+  .righthero2 {
+    display: none;
   }
-  .section4{
+  .section4 {
     width: 100%;
     height: auto;
   }
-   .wrapper {
+  .wrapper {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -311,10 +392,9 @@ hr {
     overflow-y: hidden;
     overflow-x: scroll;
   }
-  
 }
 
-@media (min-width: 426px) and (max-width: 768px){
+@media (min-width: 426px) and (max-width: 768px) {
   .headerHolder {
     width: 100%;
     height: 70px;
@@ -335,12 +415,19 @@ hr {
     height: 33px;
   }
   .navholder {
-    width: 300px;
+    width: 180px;
     font-size: 14px;
+    display: none;
+  }
+  .fa-bars{
+    display: block;
+    font-size: 24px;
   }
   .headerbutton2 {
     width: 80px;
     height: 40px;
+    display: none;
+
   }
   .hero {
     width: 100%;
@@ -350,12 +437,12 @@ hr {
     width: 90%;
     height: auto;
   }
-  .headtext{
+  .headtext {
     font-size: 30px;
     text-align: center;
     color: white;
   }
-  .bodytext{
+  .bodytext {
     font-size: 17px;
     text-align: center;
     color: white;
@@ -374,23 +461,22 @@ hr {
     display: flex;
     flex-direction: column;
   }
-  .lefthero2{
+  .lefthero2 {
     width: 90%;
     height: auto;
   }
-  .leftherotext2{
+  .leftherotext2 {
     font-size: 20px;
     text-align: center;
   }
-  .righthero2{
+  .righthero2 {
     width: 100%;
     height: 300px;
     margin-top: 20px;
   }
-
 }
-  
-@media(min-width: 769px){
+
+@media (min-width: 769px) {
   .headerHolder {
     width: 100%;
     height: 70px;
@@ -418,12 +504,12 @@ hr {
     width: 80px;
     height: 40px;
   }
-  .headtext{
+  .headtext {
     font-size: 40px;
     text-align: center;
     color: white;
   }
-  .bodytext{
+  .bodytext {
     font-size: 20px;
     text-align: center;
     color: white;
